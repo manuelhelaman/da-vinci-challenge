@@ -11,7 +11,7 @@ export default class WelcomeMessage extends Component {
                 "No one has survived to this challenge, and live to tell it",
                 "Ha, ha, ha! Why are you staring at the screen that way? Come in! The party is going to start",
                 "Who sent you here? Manuel Soto? That guy is so stubborn to take the challenge by himself!",
-                "The line is large! But we allways have room for another voyager",
+                "The line is long! But we always have room for another voyager",
                 "The time is now to conquer the world! Don't waste your time",
                 "Are you back from your vacations? Ha, ha! We thought you would not return since your last time here",
                 "Manuel! Another varmint has entered here!",

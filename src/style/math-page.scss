@@ -1,3 +1,5 @@
+// square dialog styles
+
 .square-dialog-container{
     width: 100%; 
     display: grid;
@@ -53,6 +55,8 @@
         }
     }
 }
+
+// all buttons styles
 .go-back-button-container{
     display: flex;
     justify-content: center;
@@ -72,3 +76,109 @@
         border-left: 3px solid $dark-blue;
     }
 }    
+
+.next-page-button-container{
+    display: flex;
+    justify-content: center;
+
+    .next-page-button {
+        font-family: 'Margarine', cursive;
+        height: 50px;
+        width: 110px;
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid transparent;
+        border-radius: 5px;
+        transition: 1s;
+        background-color: $pistachio;
+    }
+    .next-page-button:hover {
+        border-bottom: 3px solid $dark-blue;
+        border-left: 3px solid $dark-blue;
+    }
+}    
+
+// Styles for math instructions
+.math-instructions-container {
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    
+    .image-and-question {
+        display: grid;
+        grid-template-columns: 0.7fr 1fr;
+        font-family: 'Margarine', cursive;
+
+        .question-and-formula {
+            margin-top: 15px;
+            margin-left: 15px;
+            font-size: xx-large;
+        }
+        .image-fade-in-and-text-gaus-container{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+
+            .image-fade-in-and-text-gaus-wrapper {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    .buttons-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+// styles for physics instructions
+.physics-instructions-container{
+    display: grid;
+    grid-template-rows: 7fr 1fr;
+
+    .gif-and-text-container{
+        display: grid;
+        grid-template-columns: 3.5fr 1fr;
+
+        .galileo-instructions {
+            color: $white;
+            font-family: 'Margarine', cursive;
+            margin-top: 10px;
+            margin-left: 7px;
+        }
+
+        .gif-galileo-embeded {
+            margin-top: 10px; 
+        }
+    }
+
+    .buttons-wrapper-physics-instructions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 15px;
+    }
+}
+
+// styles for chemistry instructions
+
+.chemistry-instructions-container {
+    display: grid;
+    grid-template-rows: 4fr 4fr 1fr;
+
+    .image-fade-in-heisenberg-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+
+    .instructions-chemistry-wrapper {
+        color: $white;
+        font-family: 'Margarine', cursive;
+        font-size: larger;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .buttons-wrapper-chemistry-instructions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 15px;
+    }
+}

@@ -1,18 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import IntroducingMatisse from "../../../static/assets/images/introducing-matisse.jpg";
 import {NavLink} from 'react-router-dom';
 import Typing from 'react-typing-animation'; 
 
-export default class Arts extends Component {
-    render() {
-        return(
-            <div className="square-dialog-container">
-                <img src={IntroducingMatisse} style={{marginTop: "35px", marginLeft: "10px", borderRadius:"100px", width:"100%", height: "80%"}}/>
+export default function() {
+    return(
+        <div className="square-dialog-container">
+            <img src={IntroducingMatisse} style={{marginTop: "35px", marginLeft: "10px", borderRadius:"100px", width:"100%", height: "80%"}}/>
 
-                <div className="square-dialog-wrapper">
-                    <div className="square-dialog">
-                        <Typing>
-                            <div style={{color: "white"}}>
+            <div className="square-dialog-wrapper">
+                <div className="square-dialog">
+                    <Typing>
+                        <div style={{color: "white"}}>
                             <div>Hello, my name is Henri Émile Benoît Matisse. I am a French artist and today I will be your instructor for this quiz.</div>
                             <hr />
                             <Typing.Delay ms={1000} />
@@ -25,21 +24,28 @@ export default class Arts extends Component {
                                 <hr style={{ marginTop: "0"}}/>  
                                 The imperialism 
                                 <hr style={{ marginTop: "0"}}/>  
-                                World war l and ll
+                                World war l and ll 
                                 <hr style={{ marginTop: "0"}}/>
                                 Literature Periods and Movements
                             </div>
-                            </div>
-                        </Typing>
-                    </div>
-                </div>    
-
-                <div className="go-back-button-container">
-                    <NavLink exact to="/">
-                        <button className="go-back-button" style={{marginTop:"50px"}}>Go back</button>
-                    </NavLink>
+                        </div>
+                    </Typing>
                 </div>
+
+            </div>    
+
+            <div className="go-back-button-container">
+                <NavLink exact to="/">
+                    <button className="go-back-button">Go back</button>
+                </NavLink>
             </div>
-        );
-    }
+
+            <div className="next-page-button-container">    
+                    <NavLink to="/arts-instructions">
+                        <button className="next-page-button">Next Page</button>
+                    </NavLink>
+            </div>
+
+        </div>
+    );
 }

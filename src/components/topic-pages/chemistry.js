@@ -1,18 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import IntroducingGauss from "../../../static/assets/images/introducing-heisenberg.jpg";
 import {NavLink} from 'react-router-dom';
 import Typing from 'react-typing-animation'; 
 
-export default class Chemistry extends Component {
-    render() {
-        return(
-            <div className="square-dialog-container">
-                <img src={IntroducingGauss} style={{marginTop: "35px", marginLeft: "30px", borderRadius:"100px", width: "70%", height: "70%"}}/>
+export default function() {
+    return(
+        <div className="square-dialog-container">
+            <img src={IntroducingGauss} style={{marginTop: "35px", marginLeft: "30px", borderRadius:"100px", width: "70%", height: "70%"}}/>
 
-                <div className="square-dialog-wrapper">
-                    <div className="square-dialog" style={{height: "450px"}}>
-                        <Typing>
-                            <div style={{color: "white"}}>
+            <div className="square-dialog-wrapper">
+                <div className="square-dialog" style={{height: "450px"}}>
+                    <Typing>
+                        <div style={{color: "white"}}>
                             <div>Hey you! Don't run away! I know who you are and where you live. Now you have to listen to me carefully.</div>
                             <hr />
                             <Typing.Delay ms={1000} />
@@ -32,17 +31,21 @@ export default class Chemistry extends Component {
                                 <hr style={{ marginTop: "0"}}/>
                                 Structure of organic compounds
                             </div>
-                            </div>
-                        </Typing>
-                    </div>
-                </div>    
-
-                <div className="go-back-button-container">
-                    <NavLink exact to="/">
-                        <button className="go-back-button">Go back</button>
-                    </NavLink>
+                        </div>
+                    </Typing>
                 </div>
+            </div>    
+
+            <div className="go-back-button-container">
+                <NavLink exact to="/">
+                    <button className="go-back-button">Go back</button>
+                </NavLink>
             </div>
-        );
-    }
+            <div className="next-page-button-container">    
+                <NavLink to="/chemistry-instructions">
+                    <button className="next-page-button">Next Page</button>
+                </NavLink>
+            </div>
+        </div>
+    );
 }
