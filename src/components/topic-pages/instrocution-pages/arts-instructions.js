@@ -49,8 +49,10 @@ export default function() {
                 </NavLink>
             </div>
 
-            <div className="next-page-button-container">    
-                <button className="next-page-button" style={{marginTop:"50px"}}>Start quiz</button>
+            <div className="next-page-button-container">
+                <NavLink to="/arts-questions">    
+                    <button className="next-page-button" style={{marginTop:"50px"}}>Start quiz</button>
+                </NavLink>
             </div>
         </div>
     )

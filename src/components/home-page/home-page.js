@@ -9,7 +9,7 @@ export default class HomePage extends Component {
         return(     
             <div>
                 <div className="logo-wrapper">
-                    <img src={Logo} alt="logo" />
+                    <img src={Logo} alt="logo" style={{height:"100%", width: "15rem"}} />
                 </div>
                 <WelcomeMessage />
                 <RedirectButton />

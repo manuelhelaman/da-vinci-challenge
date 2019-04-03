@@ -37,9 +37,9 @@ export default function() {
                     </NavLink>
                 </div>
                 <div className="next-page-button-container">    
-                    {/* <NavLink to="/chemistry-instructions"> */}
+                    <NavLink to="/chemistry-questions">
                         <button className="next-page-button">start quiz</button>
-                    {/* </NavLink> */}
+                    </NavLink>
                 </div>
             </div>
         </div>

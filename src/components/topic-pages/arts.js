@@ -6,7 +6,7 @@ import Typing from 'react-typing-animation';
 export default function() {
     return(
         <div className="square-dialog-container">
-            <img src={IntroducingMatisse} style={{marginTop: "35px", marginLeft: "10px", borderRadius:"100px", width:"100%", height: "80%"}}/>
+            <img src={IntroducingMatisse} style={{marginTop: "35px", marginLeft: "10px", borderRadius:"100px", width:"433.66px", height: "80%"}}/>
 
             <div className="square-dialog-wrapper">
                 <div className="square-dialog">

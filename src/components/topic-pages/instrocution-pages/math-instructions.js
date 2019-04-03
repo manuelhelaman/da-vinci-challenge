@@ -2,7 +2,7 @@ import React from 'react';
 import ImageFadeIn from 'react-image-fade-in'
 import {NavLink} from 'react-router-dom';
 import Typing from 'react-typing-animation'; 
-import MathFormulas from '../instrocution-pages/math-formulas';
+import MathFormulas from '../../formulas/math-formulas';
 import IntroducingGaus from "../../../../static/assets/images/introducing-gauss.jpg";
 
 
@@ -28,7 +28,7 @@ export default function() {
                         <ImageFadeIn style={{borderRadius:"100px", marginTop:"10px"}} width={300} height={150} opacityTransition={5} src={IntroducingGaus} />               
                     </div>
                     <div style={{color:"#6fe1e7", fontSize:"large", marginTop:"-70px", marginRight: "60px"}}>
-                        <Typing speed={10}>
+                        <Typing speed={15}>
                             <Typing.Delay ms={5000} />
                             Is that question a little bit hard?<Typing.Delay ms={500} /> The right answer is the option A) x=3.
                             <Typing.Delay ms={500} />
@@ -64,8 +64,10 @@ export default function() {
                     </NavLink>
                 </div>
 
-                <div className="next-page-button-container">    
-                    <button className="next-page-button" style={{marginTop:"50px"}}>Next Page</button>
+                <div className="next-page-button-container">
+                    <NavLink to="maintenance">
+                        <button className="next-page-button" style={{marginTop:"50px"}}>Next Page</button>
+                    </NavLink>
                 </div>
             </div>
 
