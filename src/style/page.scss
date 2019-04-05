@@ -2,6 +2,7 @@ body{
     background-image: url(../../static/assets/images/stars.jpg);
     background-attachment: fixed;
     background-size: cover;
+    
 
     .logo-wrapper {
         background-color: $green-blue;
@@ -21,8 +22,6 @@ body{
     }    
 
         .images-and-buttons-wrapper {
-            background-image: url(../../static/assets/images/stars.jpg);
-            background-attachment: fixed;
             display: grid;
             grid-template-rows: 1fr;
 

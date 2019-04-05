@@ -65,7 +65,7 @@ export default class RedirectButton extends Component {
         var matisse = require("../../../static/assets/images/henri-matisse.jpg")
         
         return(
-            <div>
+            <div className="images-and-buttons-container">
                 <div className="images-and-buttons-wrapper">
 
                     <div className="flexbox-for-image-and-button">

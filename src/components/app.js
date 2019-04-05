@@ -4,6 +4,7 @@ import Math from "./topic-pages/math";
 import MathInstructions from "./topic-pages/instrocution-pages/math-instructions";
 import Physics from "./topic-pages/physics";
 import PhysicsInstructions from "./topic-pages/instrocution-pages/physics-instructions";
+import PhysicsQuestions from "./questions/physics-questions/physicsQuestions";
 import Chemistry from "./topic-pages/chemistry";
 import ChemistryInstructions from "./topic-pages/instrocution-pages/chemisrty-instructions";
 import ChemistryQuestions from "./questions/chemistry-questions/chemistryQuestions";
@@ -21,7 +22,7 @@ export default class App extends Component {
       <div className="app">
         
         <Router>
-          <div>
+          <div className="home-page">
             <Switch>
               <Route exact path="/" component={HomePage} />
               <Route path="/math" component={Math} />
@@ -29,6 +30,7 @@ export default class App extends Component {
               <Route path="/maintenance" component={Maintenance} />
               <Route path="/physics" component={Physics} />
               <Route path="/physics-instructions" component={PhysicsInstructions} />
+              <Route path="/physics-questions" component={PhysicsQuestions} />
               <Route path="/chemistry" component={Chemistry} />
               <Route path="/chemistry-instructions" component={ChemistryInstructions} />
               <Route path="/chemistry-questions" component={ChemistryQuestions} />

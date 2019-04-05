@@ -53,9 +53,9 @@ export default function() {
                     </NavLink>
                 </div>
                 <div className="next-page-button-container">    
-                    {/* <NavLink to="/physics-instructions"> */}
+                    <NavLink to="/physics-questions">
                         <button className="next-page-button">Start quiz</button>
-                    {/* </NavLink> */}
+                    </NavLink>
                 </div>
             </div>
             

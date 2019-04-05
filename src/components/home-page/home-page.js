@@ -7,7 +7,7 @@ export default class HomePage extends Component {
 
     render() {
         return(     
-            <div>
+            <div className="home-page-container">
                 <div className="logo-wrapper">
                     <img src={Logo} alt="logo" style={{height:"100%", width: "15rem"}} />
                 </div>
