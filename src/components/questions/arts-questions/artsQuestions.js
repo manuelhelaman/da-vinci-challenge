@@ -334,7 +334,7 @@ export default class ArtsQuestions extends Component {
             this.setState({current: this.state.current + 1}) 
         }
     }
-      
+
     render() {
         return(
             <div className="score-question-and-options-container">

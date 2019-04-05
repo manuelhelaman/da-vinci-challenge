@@ -47,7 +47,6 @@ body{
             .button:hover {
                 border-bottom: 3px solid $dark-blue;
                 border-left: 3px solid $dark-blue;
-                
             }
         }    
 
@@ -66,7 +65,48 @@ body{
                 display: flex;
                 justify-content: center;
             }
+
+            .text-and-link {
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                color: $yellow;
+
+                .text-introduction {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .link-introduction {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                }
+            }
         }
+    }
+
+    .maintenance {
+        font-family: 'Margarine', cursive;
+        color: $green;
+    }
+
+    .go-back-from-maintenance {
+        font-family: 'Margarine', cursive;
+        height: 50px;
+        width: 110px;
+        margin-top: 20px;
+        margin-left: 250px;
+        margin-right: 300px;
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid transparent;
+        border-radius: 5px;
+        transition: 1s;
+        background-color: $pistachio;
+    }
+
+    .go-back-from-maintenance:hover {
+        border-bottom: 3px solid $dark-blue;
+        border-left: 3px solid $dark-blue;
     }
 }
 

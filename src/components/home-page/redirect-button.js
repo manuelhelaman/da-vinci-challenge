@@ -77,8 +77,14 @@ export default class RedirectButton extends Component {
                                     <div className="image-scientist">                     
                                         {this.state.gauss ? <img src={gauss} alt="gauss" /> : " " }
                                     </div>
-                                    {this.state.gaussMessage ? <Typing style={{color: "white"}}>For this Quiz, Carl Friedrich Guass is going to be with you.</Typing>  : " " } 
-                                    {this.state.mathLink ? <NavLink to="/math" style={{color: "#e83e8c"}}>Click here to start the challenge</NavLink> : " "}
+                                    <div className="text-and-link">
+                                        <div className="text-introduction">
+                                            {this.state.gaussMessage ? <Typing style={{color: "white"}}>For this Quiz, Carl Friedrich Guass is going to be with you.</Typing>  : " " } 
+                                        </div>
+                                        <div className="link-introduction">
+                                            {this.state.mathLink ? <NavLink to="/math">Click here to start the challenge</NavLink> : " "}
+                                        </div>
+                                    </div>
                                 </div>                               
                             </div>
                         </div>
@@ -90,8 +96,14 @@ export default class RedirectButton extends Component {
                                     <div className="image-scientist">                      
                                         {this.state.galileo ? <img src={galileo} alt="galileo" style= {{height:"280px"}}/> : " "}
                                     </div>
-                                    {this.state.galileoMessage ? <Typing style={{color: "white"}}>For this Quiz, Galileo Galilei is going to be with you.</Typing>  : " " }
-                                    {this.state.physicsLink ? <NavLink to="/physics" style={{color: "#e83e8c"}}>Click here to start the challenge</NavLink> : " "}
+                                    <div className="text-and-link">
+                                        <div className="text-introduction">
+                                            {this.state.galileoMessage ? <Typing style={{color: "white"}}>For this Quiz, Galileo Galilei is going to be with you.</Typing>  : " " }
+                                        </div>
+                                        <div className="link-introduction">
+                                            {this.state.physicsLink ? <NavLink to="/physics">Click here to start the challenge</NavLink> : " "}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -111,8 +123,15 @@ export default class RedirectButton extends Component {
                                     <div className="image-scientist">
                                         {this.state.heisenberg ? <img src={heisenberg} alt="heisenberg" style= {{height:"280px", marginBottom: "30px"}}/> : " "}
                                     </div>
-                                    {this.state.heisenbergMessage ? <Typing style={{color: "white"}}>For this Quiz, Heisenberg is going to be with you.</Typing>  : " " }
-                                    {this.state.chemistryLink ? <NavLink to="/chemistry" style={{color: "#e83e8c"}}>Click here to start the challenge</NavLink> : " "}
+                                    
+                                    <div className="text-and-link">
+                                        <div className="text-introduction">
+                                            {this.state.heisenbergMessage ? <Typing style={{color: "white"}}>For this Quiz, Heisenberg is going to be with you.</Typing>  : " " }
+                                        </div>
+                                        <div className="link-introduction">
+                                            {this.state.chemistryLink ? <NavLink to="/chemistry">Click here to start the challenge</NavLink> : " "}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>    
                         </div>
@@ -124,8 +143,14 @@ export default class RedirectButton extends Component {
                                     <div className="image-scientist">
                                         {this.state.matisse ? <img src={matisse} alt="matisse" style= {{height:"280px", marginBottom: "30px"}}/> : " "}
                                     </div>
-                                    {this.state.matisseMessage ? <Typing style={{color: "white"}}>For this Quiz, Henri Matisse is going to be with you.</Typing>  : " " }
-                                    {this.state.artsLink ? <NavLink to="/arts" style={{color: "#e83e8c"}}>Click here to start the challenge</NavLink> : " "}
+                                    <div className="text-and-link">    
+                                        <div className="text-introduction">
+                                            {this.state.matisseMessage ? <Typing style={{color: "white"}}>For this Quiz, Henri Matisse is going to be with you.</Typing>  : " " }
+                                        </div>
+                                        <div className="link-introduction">
+                                            {this.state.artsLink ? <NavLink to="/arts">Click here to start the challenge</NavLink> : " "}
+                                        </div>
+                                    </div>
                                 </div>    
                             </div>    
                         </div>
