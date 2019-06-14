@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ScoreArea from './ScoreArea';
 import QuizArea from './QuizArea';
+import Timer from "../../timer";
 
 export default class ArtsQuestions extends Component {
     constructor(props) {
@@ -338,6 +339,7 @@ export default class ArtsQuestions extends Component {
     render() {
         return(
             <div className="score-question-and-options-container">
+                <Timer />
                 <ScoreArea correct={this.state.correct} incorrect={this.state.incorrect} />
                 <QuizArea handleClick={this.handleClick} dataSet={this.state.dataSet[this.state.current]} />
             </div>

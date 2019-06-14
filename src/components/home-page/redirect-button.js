@@ -137,7 +137,7 @@ export default class RedirectButton extends Component {
                         </div>
 
                         <div className="image-and-button-container">
-                            <button onClick={() => this.displayArts()} className="button">World History and literature</button>
+                            <button onClick={() => this.displayArts()} className="button">History and literature</button>
                             <div className="image-and-text">
                                 <div style={{width:"100%"}}>
                                     <div className="image-scientist">

@@ -190,6 +190,13 @@
     display: grid;
     grid-template-rows: 1fr 3fr;
 
+    .timer-container {
+        color: $gray;
+        font-family: 'Margarine', cursive;
+        display: flex;
+        justify-content: center;
+    }
+
     .score-area-container {
         display: grid;
         grid-template-columns: 1fr 1fr;

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { NavLink } from "react-router-dom";
 
 export default class Timer extends Component {
     constructor(){
         super()
 
         this.state = {
-            countDown: 6
+            countDown: 2400
         }
+
     }
 
     componentDidMount(){
@@ -16,16 +16,19 @@ export default class Timer extends Component {
                 countDown: prevState.countDown - 1
             }))
         }, 1000)
+
     }
 
-    // if (this.state.countDown === 0) {
-    //     <NavLink to="/time-up"/>;
-    // }
+    componentDidUpdate(){    
+        if (this.state.countDown === 0) {
+            window.location.href = "/time-up";
+        }
+    }
 
     render() {
         const {countDown} = this.state
         return(
-            <h1 style={{color: "white"}}>You have {countDown} seconds left</h1>
+            <h1 className="timer-container">You have {countDown} seconds left</h1>
         )
     }
 }

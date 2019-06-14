@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import ScoreArea from './ScoreArea';
 import QuizArea from './QuizArea'; 
-import PeriodicTable from "../../../../static/assets/images/periodic table.jpg"
+import Timer from "../../timer";
+import PeriodicTable from "../../../../static/assets/images/periodic table.jpg";
 
 export default class ChemistryQuestions extends Component {
     constructor() {
@@ -339,6 +340,7 @@ export default class ChemistryQuestions extends Component {
     render() {
         return(
             <div className="score-question-and-options-container">
+                <Timer />
                 <ScoreArea correct={this.state.correct} incorrect={this.state.incorrect} />
                 <QuizArea handleClick={this.handleClick} dataSet={this.state.dataSet[this.state.current]} />
                 <div className="periodic-table-wrapper" style={{display:"flex", justifyContent:"center", marginBottom:"20px", marginTop:"30px"}}>
